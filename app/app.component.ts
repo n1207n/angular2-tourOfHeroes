@@ -15,6 +15,7 @@ export class Hero {
       </div>
       <div>
         <label>name: </label>{{hero.name}}
+        <input [(ngModel)]="hero.name" placeholder="Name"/>
       </div>
       `
 })
