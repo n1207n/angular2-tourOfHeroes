@@ -18,7 +18,7 @@ export class HeroDetailComponent implements OnInit {
   ngOnInit() {
     this.route.params.forEach((params: Params) => {
       let id = +params['id'];
-      this.heroService.getHero(id).then(hero => this.hero = hero);
+      this.heroService.getHero(id).then((hero: Hero) => this.hero = hero);
     });
   }
 
